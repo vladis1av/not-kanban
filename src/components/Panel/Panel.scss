@@ -1,0 +1,38 @@
+.panel {
+  width: 272px;
+  margin-right: 12px;
+  height: calc(100% - 40px);
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  &:last-child {
+    margin-right: 20px;
+  }
+
+  &__container {
+    background-color: #dfe1e6;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    position: relative;
+    white-space: normal;
+    overflow: hidden;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 12px 0 12px;
+  }
+
+  &__items {
+    padding: 12px 12px 0 12px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 0;
+  }
+}

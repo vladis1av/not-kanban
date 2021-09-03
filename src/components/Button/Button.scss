@@ -1,0 +1,17 @@
+.btn {
+  background: #39c071;
+  border-radius: 3px;
+  color: #fff;
+  border: 0;
+  padding: 9px 12px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &[disabled] {
+    opacity: 0.3;
+  }
+
+  &:hover {
+    background: lighten(#39c071, 5);
+  }
+}

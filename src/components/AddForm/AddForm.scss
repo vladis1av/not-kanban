@@ -1,0 +1,49 @@
+.add-form {
+  padding: 12px;
+
+  &__input {
+    textarea {
+      font-size: 14px;
+      border: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      resize: none;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-add-btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 12px;
+      border-radius: 3px;
+      cursor: pointer;
+      color: #6b808c;
+      &__svg-add {
+        width: 26px;
+        fill: #6b808c;
+        margin-right: 10px;
+      }
+
+      &:hover {
+        background-color: darken(#dfe3e6, 10);
+        color: darken(#6b808c, 50);
+        .add-form__bottom-add-btn__svg-add {
+          width: 26px;
+          fill: darken(#6b808c, 50);
+          margin-right: 10px;
+        }
+      }
+
+      img {
+        margin-right: 8px;
+      }
+    }
+  }
+}

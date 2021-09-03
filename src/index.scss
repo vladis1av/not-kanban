@@ -1,0 +1,53 @@
+body {
+  background-color: #edeef0;
+  margin: 0;
+  padding: 20px;
+  font-size: 14px;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+* {
+  outline: none;
+  &::-webkit-scrollbar {
+    width: 7px;
+    height: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #a1a1a1;
+    border-radius: 20px;
+  }
+}
+
+html,
+body,
+.app,
+#root {
+  height: 100%;
+}
+
+.app {
+  white-space: nowrap;
+}
+
+.remove-icon-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  width: 13px;
+  height: 13px;
+  padding: 5px;
+  cursor: pointer;
+  fill: #6b808c;
+  &:hover {
+    background-color: darken(#dfe3e6, 10);
+    fill: darken(#6b808c, 50);
+  }
+}
